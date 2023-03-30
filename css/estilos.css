@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgba(216, 209, 209, 0.39);
+}
+
+.banner{
+    width: 98%;
+    margin: 1% 1%;
+}
+
+.main{
+    background-color: black;
+    margin: 2% 0%;
+    text-align: center;
+}
+
+.titulo{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.subtitulo1{
+    color: rgba(0, 0, 0, 0.904);
+}
+
+.section{
+    margin: 2% 40%
+}
+
+.parrafo{
+    margin-top: 5%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+
+.form{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.input{
+    width: 20%;
+    margin-top: 1%;
+    background-color: black;
+    color: white;
+    opacity: 0.45;
+    border:none;
+}
