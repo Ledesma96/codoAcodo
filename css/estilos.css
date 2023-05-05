@@ -1,56 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 *{
-    margin: 0%;
-    padding: 0%;
+    padding:0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.body{
-    background-color: rgba(216, 209, 209, 0.39);
+.nav{
+    background-color: rgb(53, 58, 64);
 }
 
-.banner{
-    width: 98%;
-    margin: 1% 1%;
+.logo{
+    text-decoration: none;
 }
 
-.main{
-    background-color: black;
-    margin: 2% 0%;
-    text-align: center;
+
+
+.portada{
+    width: 100%;
+    height: 85vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../imagenes/ba1.jpg");
+    background-size: cover;
+}
+.portada__div{
+    width: 38%;
+    margin-bottom: 10%;
+    margin-right: 5%;
 }
 
-.titulo{
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
+.button1{
+    padding: 5px;
+    margin-right: 5px;
+    border: solid 0.5px white;
+    border-radius: 5px;
 }
 
-.subtitulo1{
-    color: rgba(0, 0, 0, 0.904);
+.button2{
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #29A744;
+    border:none;
+    border-radius: 5px;
 }
 
-.section{
-    margin: 2% 40%
+.card{
+    width: 300px;
+    height: 550px;
+    margin: 10px;
 }
 
-.parrafo{
-    margin-top: 5%;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
+.card__button1{
+    padding:0px 3px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}
+.card__button2{
+    padding:0px 3px;
+    background-color: rgb(22, 161, 184);
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}
+.card__button__ada1{
+    padding:0px 3px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}
+.card__button__ada2{
+    padding:0px 3px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.backgroudCard{
+    background-color: #333A40;
+    border-left: solid 1px white;
+}
+
+.span{
+    border-bottom:1px dotted #9999CC;
 }
 
 .form{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
+    width: 70%;
 }
-
+.form__div{
+    width: 100%;
+    margin-bottom: 15px;
+}
 .input{
-    width: 20%;
-    margin-top: 1%;
-    background-color: black;
-    color: white;
-    opacity: 0.45;
-    border:none;
+    width: 48%;
+    height: 40px;
+    border: solid 0.5px rgba(128, 128, 128, 0.322);
+    border-radius: 5px;
+}
+.textarea{
+    width: 100%;
+    border: solid 0.5px rgba(128, 128, 128, 0.322);
+    border-radius: 5px;
+}
+.buttonEviar{
+    width: 100%;
+    background-color: #96C93E;
+    padding: 5px 0px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #1C3F53;
+}
+.a{
+    text-decoration: none;
 }

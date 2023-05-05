@@ -1,38 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body class="body">
-    <main class="main">
-        <h1 class="titulo">viajes</h1>
-    </main>
-    <img class="banner" src="./imagenes/depositphotos_184854346-stock-photo-airplane-jetliner-flying-above-clouds.jpg" alt="banner de avion volando">
-    <section class="section">
-        <div>
-            <h4 class="subtitulo1">El  viaje que buscas</h4>
-            <h3 class="subtitulo2">A un click de distancia!</h3>
+<body>
+  <header
+    <nav class="navbar navbar-expand-lg navbar-light nav">
+      <div class="d-flex">
+        <a class="d-flex logo" href="">
+          <img  src="./imagenes/codoacodo.png" width="100" alt="">
+          <h3 class="text-light mt-2">Conf Bs As</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#oradores">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#formulario">Conviertete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" aria-current="page" href="#">Comprar tickets</a>
+            </li>
+          </ul>
         </div>
-        <p class="parrafo">Lo unico que necesitas es completar el siguiente formulario</p>
-    </section>
-    <form action="" class="form">
-        <input  class="input" type="text" name="" id="" placeholder="NOMBRE">
-       
-        <input  class="input" type="text" name="" id="" placeholder="APELLIDO">
-       
-        <input  class="input" type="text" name="" id="" placeholder="EMAIL">
-        
-        <textarea   class="input" name="" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje aqui..."></textarea>
-   
-        <input  class="input" type="submit" name="" id="">
-        <input  class="input" type="reset">
-    </form> 
+      </div>
+    </nav>
+  </header>
+  <section class="portada d-flex flex-column justify-content-end align-items-end">
+    <div class="portada__div d-flex flex-column justify-content-end align-items-end">
+      <h1 class="text-light">Conf Bs As</h1>
+      <p class="text-light text-end">Bs As llega por primera vez a argentina. Un evento para compartir con nuesta comundad el conocimiento y experiencia  de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, otros estudiantes de codo a codo y los oradores del primer nivel que tenemos para ti. Te esperamos!</p>
+    <div class="d-flex">
+      <button class="text-light bg-transparent button1">Quiero ser orador</button>
+      <button class="text-light button2">Comprar tickets</button>
+    </div>
+    </div>
+  </section>
+  <main class="d-flex flex-column justify-content-center align-items-center" id="oradores">
+    <div>
+      <P class="text-center mt-3">CONOCE A LOS</P>
+      <h2 class="text-center">ORADORES</h2>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="card">
+        <img class="mb-3" src="./imagenes/steve.jpg" alt="Steve jobs sosteniendo un celular">
+        <div>
+          <button class="bg-warning card__button1">JavaScript</button>
+          <button class="card__button2 text-light">React</button>
+          <h3>Steve Jobs</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores veniam eos iure aliquam corrupti temporibus repellendus, vel quam dolore molestias sunt itaque. In facere, ex cum aperiam dolorum voluptatibus.</p>
+      </div>
+      <div class="card">
+        <img class="mb-3" src="./imagenes/bill.jpg" alt="Steve jobs sosteniendo un celular">
+        <div>
+          <button class="bg-warning card__button1">JavaScript</button>
+          <button class="card__button2 text-light">React</button>
+          <h3>Bill Gates</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores veniam eos iure aliquam corrupti temporibus repellendus, vel quam dolore molestias sunt itaque. In facere, ex cum aperiam dolorum voluptatibus.</p>
+      </div>
+      <div class="card">
+        <img class="mb-3" src="./imagenes/ada.jpeg" alt="Steve jobs sosteniendo un celular">
+        <div>
+          <button class="bg-secondary text-light card__button__ada1">Negocios</button>
+          <button class="card__button__ada2 bg-danger text-light">Startups</button>
+          <h3>Ada Lovelance</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores veniam eos iure aliquam corrupti temporibus repellendus, vel quam dolore molestias sunt itaque. In facere, ex cum aperiam dolorum voluptatibus.</p>
+      </div>
+    </div>
+  </main>
+  <div class="d-flex">
+    <img src="./imagenes/honolulu.jpg" width="50%" alt="">
+    <div class="backgroudCard p-3">
+      <h3 class="text-light">BA AS - Octubre</h3>
+      <p class="text-light">Buenos aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km² de superficie)</p>
+      <button class=" text-light bg-transparent button1">Conoce más</button>
+    </div>
+  </div>
+  <section class="d-flex flex-column justify-content-center align-items-center">
+    <p class="mt-4">CONVIÉRTETE EN UN</p>
+    <h2>ORADOR</h2>
+    <P>Anótate como orador para dar una <span class="span">charla inite.</span>Cuéntanos de qué quieres hablar!</P>
+    <form class="form" id="formulario" action="">
+      <div class="form__div d-flex justify-content-between">
+        <input class="input" type="text" placeholder="Nombre">
+        <input class="input" type="text" placeholder="Apellido">
+      </div>
+      <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+      <p>Recuerda incluir un titulo para tu charla</p>
+      <button class="buttonEviar text-light">Enviar</button>
+    </form>
+  </section>
+  <footer class="footer d-flex justify-content-between align-items-center mt-3 p-4">
+    <a class="a text-light" href="">Preguntas <br>frecuentes</a>
+    <a class="a text-light" href="">Contáctanos</a>
+    <a class="a text-light" href="">Prensa</a>
+    <a class="a text-light" href="">Conferencias</a>
+    <a class="a text-light" href="">Términos y <br> codiciones</a>
+    <a class="a text-light" href="">Privacidad</a>
+    <a class="a text-light" href="">Estudiantes</a>
+  </footer>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
